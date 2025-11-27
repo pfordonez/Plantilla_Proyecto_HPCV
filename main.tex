@@ -1,0 +1,229 @@
+% Plantilla LaTeX para Overleaf
+% Guía integrada de análisis del proyecto final
+
+\documentclass[12pt]{article}
+
+% Idioma y codificación
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% Márgenes y formato general
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+
+% Listas y tablas
+\usepackage{enumitem}
+\usepackage{array}
+
+% Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue
+}
+
+% Título del documento (puede ajustarse según la asignatura)
+\title{Guía Integrada para el Análisis del Proyecto Final\\ \large Asignatura: Human Perception \\ Computer Vision}
+\author{Docente: Pablo F. Ordoñez Ordoñez.}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Propósito de la guía}
+
+Esta guía unifica y adapta los lineamientos de las tareas de proyecto para la asignatura \textbf{Human Perception \\ Computer Vision}, con el fin de orientar a los estudiantes en la elaboración del \textbf{análisis de su proyecto final}. 
+
+Cada proyecto debe considerar explícitamente \textbf{tres dimensiones obligatorias}:
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item \textbf{Human Perception (HP):} procesos de percepción visual humana, atención, memoria, carga cognitiva, sesgos y límites sensoriales, FATE.
+  \item \textbf{Computer Vision (CV):} adquisición, preprocesamiento, representación y análisis automatizado de información visual.
+  \item \textbf{Técnicas de IA para CV y ML/Deep Learning (AI/ML/DL):} modelos y algoritmos de inteligencia artificial que permiten aprender patrones complejos (por ejemplo: CNN, RNN, transformers, modelos de clasificación, segmentación o detección para visión por computador).
+\end{enumerate}
+
+El documento de análisis de proyecto final deberá seguir la estructura que se detalla a continuación.
+
+\section{Título del proyecto}
+
+El título debe reflejar claramente el propósito del proyecto e idealmente evidenciar la integración de al menos dos de las tres dimensiones (HP, CV, AI/ML/DL).
+
+\vspace{0.2cm}
+\noindent
+\textbf{Ejemplo:} \\ 
+\emph{"Sistema para la detección de fatiga visual en estudiantes utilizando principios de percepción humana, visión por computador y redes neuronales profundas"}.
+
+\section{Datos del estudiante}
+
+\begin{itemize}
+  \item Nombre completo del estudiante.
+  \item Correo institucional.
+  \item Carrera y ciclo.
+\end{itemize}
+
+\section{Definición del problema (versión computacional)}
+
+En esta sección se debe describir el problema de forma clara, sin mezclar aún detalles de la solución. Considere:
+
+\begin{enumerate}[label=\textbf{\alph*)}]
+  \item \textbf{Contexto general del problema:} ¿En qué escenario surge? (educativo, industrial, médico, urbano, etc.).
+  \item \textbf{Dimensión de Human Perception (HP):} 
+  \begin{itemize}
+    \item ¿Qué procesos de percepción humana están involucrados? (atención, percepción del movimiento, reconocimiento de objetos, emociones, carga cognitiva, FATE, etc.).
+    \item ¿Qué limitaciones o sesgos perceptuales influyen en el problema? (fatiga, tiempo de reacción, campo visual reducido, sobrecarga de estímulos, etc.).
+  \end{itemize}
+  \item \textbf{Dimensión de Computer Vision (CV):}
+  \begin{itemize}
+    \item ¿Qué tipo de datos visuales o señales sensoriales se requieren? (imágenes, video, secuencias de profundidad, flujo óptico, etc.).
+    \item ¿Qué operaciones básicas de visión por computador son necesarias? (detección, segmentación, seguimiento de objetos, extracción de características, etc.).
+  \end{itemize}
+  \item \textbf{Dimensión de AI/ML/DL aplicada a CV:}
+  \begin{itemize}
+    \item ¿Por qué el problema requiere técnicas de inteligencia artificial o aprendizaje profundo? 
+    \item ¿Qué patrones o relaciones en los datos no se podrían resolver de forma trivial sin un modelo de aprendizaje? (clasificación de estados, reconocimiento de gestos, predicción de eventos, etc.).
+  \end{itemize}
+  \item \textbf{Justificación de relevancia:}
+  \begin{itemize}
+    \item ¿Por qué este problema es importante a nivel local (idealmente en Ecuador o Latinoamérica)?
+    \item ¿Qué impacto tendría una solución efectiva basada en HP + CV + AI/ML/DL?
+  \end{itemize}
+\end{enumerate}
+
+\section{Objetivo general y objetivos específicos}
+
+Formule un \textbf{objetivo general} centrado en el problema y en la integración de las dimensiones. Posteriormente, liste los \textbf{objetivos específicos}.
+
+\subsection*{Ejemplos de formulación}
+
+\begin{itemize}
+  \item \textbf{Objetivo general:} \\ Desarrollar un sistema que estime el nivel de fatiga visual en estudiantes durante sesiones de estudio, integrando principios de percepción humana, visión por computador y redes neuronales profundas.
+  \item \textbf{Objetivos específicos:}
+  \begin{itemize}
+    \item Desarrollar una interfaz gráfica interactiva que permita registrar, presentar estímulos visuales y recopilar respuestas del usuario para evaluar procesos de percepción humana (atención, reconocimiento, tiempo de reacción o carga cognitiva).
+    \item Implementar un módulo de visión por computador combinado con técnicas de IA/ML/DL para analizar las respuestas visuales o comportamentales registradas en la interfaz, con el fin de clasificar, estimar o predecir indicadores perceptuales (por ejemplo: atención, fatiga, reconocimiento, precisión visual).
+    
+  \end{itemize}
+\end{itemize}
+
+
+
+
+\section{Usuarios o clientes potenciales}
+
+Describa quiénes se beneficiarían de la solución:
+
+\begin{itemize}
+  \item Organizaciones o instituciones (en Ecuador o Latinoamérica) donde el problema es relevante.
+  \item Perfiles de usuario final: estudiantes, docentes, operadores, técnicos, personal médico, etc.
+  \item Para cada tipo de usuario, señale brevemente cómo se relaciona con HP, CV y AI/ML/DL.
+\end{itemize}
+
+\section{Modelos de análisis del problema}
+
+En esta sección se deben incluir modelos de análisis utilizando un lenguaje de modelado formal (por ejemplo, UML u otro lenguaje ingenieril). \textbf{Estos modelos describen solo el problema, no la solución detallada.}
+
+\subsection{Modelos mínimos sugeridos}
+
+\begin{enumerate}[label=\textbf{\arabic*.}]
+  \item \textbf{Modelo de contexto del sistema:} representa el entorno donde ocurre el problema y los actores principales (usuarios, sensores, sistemas externos).
+  \item \textbf{Casos de uso centrados en HP y CV:}
+  \begin{itemize}
+    \item Interacciones del usuario con el sistema desde la perspectiva de percepción humana (ej.: observa estímulos, responde, se fatiga, se distrae).
+    \item Interacciones relacionadas con la captura y procesamiento de información visual (ej.: cámara registra rostro, sistema analiza movimiento ocular).
+    \item 2 escenarios por cada caso de uso
+  \end{itemize}
+  \item \textbf{Modelo conceptual (clases o entidades):}
+  \begin{itemize}
+    \item Entidades como: \emph{Usuario}, \emph{Sesión}, \emph{Imagen}, \emph{Video}, \emph{Señal de entrada}, \emph{Etiqueta perceptual}, \emph{Métrica de desempeño}, entre otras.
+    \item Atributos y relaciones relacionadas con percepciones humanas, datos visuales y anotaciones para entrenamiento de modelos.
+  \end{itemize}
+  \item \textbf{Diagramas de actividades o flujo del fenómeno perceptual:}
+  \begin{itemize}
+    \item Secuencia de acciones que sigue el usuario y el sistema.
+    \item Puntos donde la percepción humana se ve afectada y donde entra el análisis de CV.
+  \end{itemize}
+\end{enumerate}
+
+\subsection{Resumen de dimensiones en los modelos}
+
+\begin{center}
+\begin{tabular}{|>{\raggedright}p{3.2cm}|>{\raggedright}p{10cm}|}
+\hline
+\textbf{Dimensión} & \textbf{Qué modelar} \\
+\hline
+Human Perception (HP) & Estímulos, atención, percepción del usuario, emociones, fatiga, carga cognitiva, sesgos, tiempos de reacción. \\
+\hline
+Computer Vision (CV) & Flujo visual, cámara o sensor, preprocesamiento (filtros, normalización), detección, segmentación, extracción de rasgos. \\
+\hline
+AI/ML/DL para CV & Tipos de datos de entrada y salida, etiquetas, características que requieren aprendizaje, tareas de clasificación, regresión, segmentación o detección. \\
+\hline
+\end{tabular}
+\end{center}
+
+\section{Descripción preliminar de la solución}
+
+En esta sección se introduce una primera versión conceptual de la solución (sin entrar todavía en detalles de implementación):
+
+\begin{itemize}
+  \item Cómo se integran HP, CV y AI/ML/DL en el sistema propuesto.
+  \item Tipo de técnicas de IA para visión que se podrían usar (por ejemplo: CNN, redes siamesas, modelos de segmentación semántica, modelos de detección de objetos, modelos de aprendizaje por refuerzo profundo, etc.).
+  \item Breve descripción del conjunto de datos:
+  \begin{itemize}
+    \item Fuente de los datos (propios, públicos, institucionales).
+    \item País u origen (preferible Ecuador o contexto latinoamericano).
+    \item Método de recolección (sensores, cámaras, plataformas, encuestas, etc.).
+    \item Un ejemplo de la estructura de los datos (columnas o tipos de archivos).
+  \end{itemize}
+\end{itemize}
+
+\section{Implementación (plan inicial)}
+
+Describa de forma general cómo planea implementar la solución:
+
+\begin{itemize}
+  \item Lenguaje(s) de programación (por ejemplo, Python, C++, etc.).
+  \item Entorno o framework principal (por ejemplo, OpenCV, TensorFlow, PyTorch, Keras, Unity con ML-Agents, etc.).
+  \item Librerías específicas para visión por computador y aprendizaje profundo.
+  \item Requerimientos de hardware (cámara, GPU, dispositivos de captura, entornos inmersivos, etc.).
+\end{itemize}
+
+\section{Resultados esperados y evaluación}
+
+Explique qué espera obtener y cómo evaluará la solución:
+
+\begin{itemize}
+  \item Resultados cualitativos (mejora de la experiencia perceptual, reducción de errores humanos, apoyo al aprendizaje, etc.).
+  \item Resultados cuantitativos (métricas de desempeño del modelo de IA/ML/DL).
+  \item Métricas posibles: exactitud (accuracy), precisión, recall, F1-score, AUC-ROC, IoU (para segmentación), etc.
+  \item Cómo evaluará el componente de percepción humana (cuestionarios, estudios de usuario, tiempos de reacción, etc.).
+  \item Cómo evaluará el componente de visión por computador (robustez ante ruido, cambios de iluminación, diferentes usuarios, etc.).
+\end{itemize}
+
+\section{Referencias}
+
+Liste todas las referencias en formato IEEE (artículos, libros, repositorios de datos o código, documentación de librerías, etc.).
+
+\section{Anexo: Sesiones con herramientas de IA}
+
+Incluya un anexo donde se documenten las interacciones con herramientas de IA generativa (por ejemplo, ChatGPT):
+
+\begin{itemize}
+  \item Preguntas realizadas.
+  \item Respuestas obtenidas.
+  \item Comentario crítico: qué partes de las respuestas se utilizaron y cuáles se descartaron.
+  \item Cómo influyeron estas herramientas en la definición del problema y en los modelos de análisis.
+\end{itemize}
+
+\section*{Recomendaciones finales}
+
+\begin{itemize}
+  \item Mantenga clara la diferencia entre: \textbf{análisis del problema} y \textbf{diseño/implementación de la solución}.
+  \item Verifique siempre que cada sección mencione explícitamente al menos una de las tres dimensiones (HP, CV, AI/ML/DL). Idealmente, conecte las tres.
+  \item Utilice diagramas y tablas claros, con buena rotulación y descripciones breves.
+  \item Priorice el uso de datos de contexto local (Ecuador o Latinoamérica) cuando sea posible.
+\end{itemize}
+
+\end{document}
